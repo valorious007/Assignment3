@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int age;
+
+    printf("Enter your Age:  \n", age);
+    scanf("%d", &age);
+
+    switch (age)
+    {
+    case 0 ... 17:
+        printf("You are minor, not eligible to vote.\n");
+        break;
+    case 18 ... 65:
+        printf("You are Adult , you can vote.\n");
+        break;
+    default:
+        printf("You are Senior ,ofcourse you can vote.\n");
+        break;
+    }
+    return 0;
+}
