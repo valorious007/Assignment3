@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+      int status;
+
+      printf("Enter your Membership Status\n1.Members\n2.Non-members :  ", status);
+      scanf("%d", &status);
+
+      if (status == 1)
+      {
+        printf("Spend over Rs.100 get a discount of 10%%.\n");
+      }
+      else if (status == 2)
+      {
+        printf("Spend over Rs.150 get a discount of 5%%.\n");
+      }
+      else
+      {
+        printf("Other gets no discount\n");
+      }
+      
+      
+
+    return 0;
+}
